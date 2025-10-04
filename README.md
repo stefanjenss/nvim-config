@@ -1,13 +1,13 @@
-# 💤 My LazyVim Config
+# My LazyVim Config
 
 Personal Neovim configuration based on [LazyVim](https://github.com/LazyVim/LazyVim) with Python development focus.
 
 ## Features
 
-- 🐍 **Python-optimized:** Pyright LSP, Ruff linting, Black formatting
-- 🔬 **IPython integration:** Send code to IPython REPL from Neovim
-- ⚡ **LazyVim base:** Modern plugin manager, excellent defaults
-- 🎨 **Clean structure:** Modular configuration, easy to customize
+- **Python-optimized:** Pyright LSP, Ruff linting, Black formatting
+- **IPython integration:** Send code to IPython REPL from Neovim
+- **LazyVim base:** Modern plugin manager, excellent defaults
+- **Clean structure:** Modular configuration, easy to customize
 
 ## Custom Keybindings
 
