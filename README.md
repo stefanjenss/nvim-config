@@ -6,6 +6,7 @@ Personal Neovim configuration based on [LazyVim](https://github.com/LazyVim/Lazy
 
 - **Python-optimized:** Pyright LSP, Ruff linting, Black formatting
 - **IPython integration:** Send code to IPython REPL from Neovim
+- **OpenCode integration:** Ask, select prompts, and review edits from Neovim
 - **LazyVim base:** Modern plugin manager, excellent defaults
 - **Clean structure:** Modular configuration, easy to customize
 
@@ -16,6 +17,15 @@ Personal Neovim configuration based on [LazyVim](https://github.com/LazyVim/Lazy
 - `<leader>pi` - Open IPython in split (uses .venv if available)
 - `<leader>ps` - Send line/selection to IPython
 - `<leader>pf` - Send entire file to IPython
+
+### OpenCode Workflow
+- `<C-.>` - Toggle OpenCode side terminal
+- `<leader>oa` - Ask OpenCode about cursor/selection
+- `<leader>os` - Select OpenCode prompt/command/server
+- `<leader>on` - New OpenCode session
+- `<leader>ou` - Undo last OpenCode change
+- `<leader>or` - Redo last OpenCode change
+- `<leader>oi` - Interrupt OpenCode
 
 See full keybinding guide in the [LazyVim docs](https://lazyvim.org).
 
@@ -50,7 +60,8 @@ See full keybinding guide in the [LazyVim docs](https://lazyvim.org).
 │   │   ├── lazy.lua            # Plugin manager config
 │   │   └── autocmds.lua        # Auto-commands
 │   └── plugins/
-│       └── python.lua          # Python LSP configuration
+│       ├── python.lua          # Python LSP configuration
+│       └── opencode.lua        # OpenCode integration
 ```
 
 ## Requirements
@@ -61,6 +72,7 @@ See full keybinding guide in the [LazyVim docs](https://lazyvim.org).
 - Python 3 with `pynvim` package for Python features
 - [ripgrep](https://github.com/BurntSushi/ripgrep) for telescope searching
 - [LazyGit](https://github.com/jesseduffield/lazygit) (optional, for git UI)
+- [OpenCode](https://opencode.ai/) (`opencode`) for AI pairing inside Neovim
 
 ## Credits
 
